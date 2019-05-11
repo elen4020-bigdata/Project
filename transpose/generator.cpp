@@ -4,6 +4,7 @@
 #include <random>
 #include <chrono>
 #include <fstream>
+#include <cstdlib>
 
 using namespace std;
 using namespace std::chrono;
@@ -31,7 +32,8 @@ void Generate2DArray(int n){
     outFile.close();
 }
 
-int main(){
-    Generate2DArray(20);
-    return 0;
+int main(int argc, const char *argv[]){
+	int size = atoi(argv[1]);
+    	Generate2DArray(size);
+   	return 0;
 }
