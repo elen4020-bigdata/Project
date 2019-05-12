@@ -1,5 +1,6 @@
 # Project
 Find C++ code in the `transpose` directory
+The matrix size must be perfectly divisible by ranks-1.
 ## Run 
 `cd transpose`
 
